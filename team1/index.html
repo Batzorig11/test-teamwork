@@ -5,38 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="calc.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <body>
     <div>
       <div class="container">
-        <div class="result"></div>
-        <div class="button">
-          <button class="spe" onclick="ac()">AC</button>
-          <button class="spe" onclick="sth()">+/-</button>
-          <button class="spe" onclick="per()">%</button>
-          <button class="symbol" onclick="huvaah()">/</button>
-
-          <button class="number" onclick="call1(1)">1</button>
-          <button class="number" onclick="call1(2)">2</button>
-          <button class="number" onclick="call1(3)">3</button>
-          <button class="symbol" onclick="urjeh()">*</button>
-
-          <button class="number" onclick="call2(4)">4</button>
-          <button class="number" onclick="call2(5)">5</button>
-          <button class="number" onclick="call2(6)">6</button>
-          <button class="symbol" onclick="hasah()">-</button>
-
-          <button class="number" onclick="call7()">7</button>
-          <button class="number" onclick="call8()">8</button>
-          <button class="number" onclick="call9()">9</button>
-          <button class="symbol" onclick="nemeh()">+</button>
-
-          <button class="number" onclick="call0()">0</button>
-          <button class="number" onclick="call">.</button>
-          <button class="symbol" onclick="hariu()">=</button>
+        <div class="input" id="input"></div>
+        <div class="btn">
+          <button onclick="call('clear')">
+            <i class="fa-solid fa-rectangle-xmark"></i>
+          </button>
+          <button onclick="call('ac')">AC</button>
+          <button onclick="call('per')">%</button>
+          <button onclick="call('/')">/</button>
+          <button onclick="call('1')">1</button>
+          <button onclick="call('2')">2</button>
+          <button onclick="call('3')">3</button>
+          <button onclick="call('*')">X</button>
+          <button onclick="call('4')">4</button>
+          <button onclick="call('5')">5</button>
+          <button onclick="call('6')">6</button>
+          <button onclick="call('-')">-</button>
+          <button onclick="call('7')">7</button>
+          <button onclick="call('8')">8</button>
+          <button onclick="call('9')">9</button>
+          <button onclick="call('+')">+</button>
+          <button onclick="call('nega')">+/-</button>
+          <button onclick="call('0')">0</button>
+          <button onclick="call('.')">.</button>
+          <button onclick="call('=')">=</button>
         </div>
       </div>
     </div>
-    <script src="./main.js"></script>
+    <script src="calc.js"></script>
   </body>
 </html>
