@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <p id="display"></p>
+      <div class="buttons">
+        <button onclick="clearDisplay()" class="operator">C</button>
+        <button onclick="appendValue('/')" class="operator">/</button>
+        <button onclick="appendValue('')" class="operator"></button>
+        <button onclick="positive()" class="operator">+/-</button>
+
+        <button onclick="appendValue('-')" class="operator">-</button>
+
+        <button onclick="appendValue('7')" class="num">7</button>
+        <button onclick="appendValue('8')" class="num">8</button>
+        <button onclick="appendValue('9')" class="num">9</button>
+        <button onclick="appendValue('+')" class="operator">+</button>
+
+        <button onclick="appendValue('4')" class="num">4</button>
+        <button onclick="appendValue('5')" class="num">5</button>
+        <button onclick="appendValue('6')" class="num">6</button>
+        <button onclick="calculate()" class="equal">=</button>
+
+        <button onclick="appendValue('1')" class="num">1</button>
+        <button onclick="appendValue('2')" class="num">2</button>
+        <button onclick="appendValue('3')" class="num">3</button>
+        <button onclick="appendValue('0')" class="num">0</button>
+
+        <button onclick="appendValue('.')" class="num">.</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
