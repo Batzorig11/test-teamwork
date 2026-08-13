@@ -1,13 +1,11 @@
 const display = document.getElementById("display");
 function appendValue(input) {
   display.innerHTML += input;
-  console.log("buton");
+  console.log("button clicked");
 }
-
-function positive() {
-  display.innerHTML = display.innerHTML * -1;
+function toggleSign() {
+  display.innerHTML = Number(display.innerHTML) * -1;
 }
-
 function clearDisplay() {
   display.innerHTML = "";
 }
@@ -15,6 +13,6 @@ function calculate() {
   try {
     display.innerHTML = eval(display.innerHTML);
   } catch (error) {
-    display.value = "Error";
+    display.innerHTML = "Error";
   }
 }
